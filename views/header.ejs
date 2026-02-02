@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="/" class="logo">
+          <i class="fas fa-graduation-cap"></i>
+          <span>AlgoMaster</span>
+        </a>
+        
+        <div class="nav-menu">
+          <a href="/" class="nav-link <%= title.includes('Home') ? 'active' : '' %>">
+            <i class="fas fa-home"></i> Home
+          </a>
+          <a href="#resources" class="nav-link">
+            <i class="fas fa-book"></i> Resources
+          </a>
+        </div>
+      </div>
+      
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search for courses...">
+        </div>
+        <a href="/login" class="btn-login">
+          <i class="fas fa-sign-in-alt"></i> Login
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/" class="mobile-link <%= title.includes('Home') ? 'active' : '' %>">
+      <i class="fas fa-home"></i> Home
+    </a>
+    <a href="#resources" class="mobile-link">
+      <i class="fas fa-book"></i> Resources
+    </a>
+    <a href="/login" class="mobile-link <%= title.includes('Login') ? 'active' : '' %>">
+      <i class="fas fa-sign-in-alt"></i> Login
+    </a>
+  </div>

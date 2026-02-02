@@ -1,0 +1,510 @@
+<%- include('header') %>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <canvas id="particleCanvas" class="particle-canvas"></canvas>
+  <div class="hero-container">
+    <div class="hero-content">
+      <h1>Master Software Engineering Interviews</h1>
+      <p>Learn from industry experts and ace your next technical interview with our comprehensive courses</p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary">Get Started</button>
+        <button class="btn btn-secondary" onclick="document.getElementById('featured-courses').scrollIntoView({behavior: 'smooth'})">Explore Courses</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">650K+</span>
+          <span class="stat-label">Students</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Courses</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">4.8★</span>
+          <span class="stat-label">Rating</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop" alt="Learning">
+    </div>
+  </div>
+</section>
+
+<!-- Featured Courses Section -->
+<section class="section" id="featured-courses">
+  <div class="container">
+    <div class="section-header">
+      <h2>Featured Courses</h2>
+      <p>Start learning with our most popular courses</p>
+    </div>
+    
+    <div class="courses-grid">
+      <div class="course-card">
+        <div class="course-image">
+          <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=400&h=250&fit=crop" alt="DSA Course">
+          <span class="course-badge">Bestseller</span>
+        </div>
+        <div class="course-body">
+          <h3 class="course-title">DSA Patterns Mastery</h3>
+          <p class="course-instructor">By Ashish Pratap Singh</p>
+          <div class="course-rating">
+            <span class="rating-stars">★★★★★</span>
+            <span class="rating-number">4.9</span>
+            <span class="rating-count">(12,543)</span>
+          </div>
+          <div class="course-footer">
+            <span class="course-price">
+              <span class="price-current">$49.99</span>
+              <span class="price-original">$129.99</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-image">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop" alt="System Design">
+          <span class="course-badge hot">Hot</span>
+        </div>
+        <div class="course-body">
+          <h3 class="course-title">System Design Fundamentals</h3>
+          <p class="course-instructor">By Industry Experts</p>
+          <div class="course-rating">
+            <span class="rating-stars">★★★★★</span>
+            <span class="rating-number">4.8</span>
+            <span class="rating-count">(8,921)</span>
+          </div>
+          <div class="course-footer">
+            <span class="course-price">
+              <span class="price-current">$59.99</span>
+              <span class="price-original">$149.99</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-image">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=250&fit=crop" alt="System Design Interview">
+          <span class="course-badge">Popular</span>
+        </div>
+        <div class="course-body">
+          <h3 class="course-title">System Design Interviews</h3>
+          <p class="course-instructor">By Senior Engineers</p>
+          <div class="course-rating">
+            <span class="rating-stars">★★★★★</span>
+            <span class="rating-number">4.9</span>
+            <span class="rating-count">(15,234)</span>
+          </div>
+          <div class="course-footer">
+            <span class="course-price">
+              <span class="price-current">$54.99</span>
+              <span class="price-original">$139.99</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-image">
+          <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&h=250&fit=crop" alt="Low Level Design">
+        </div>
+        <div class="course-body">
+          <h3 class="course-title">Low-Level Design Interviews</h3>
+          <p class="course-instructor">By Tech Leads</p>
+          <div class="course-rating">
+            <span class="rating-stars">★★★★★</span>
+            <span class="rating-number">4.7</span>
+            <span class="rating-count">(6,789)</span>
+          </div>
+          <div class="course-footer">
+            <span class="course-price">
+              <span class="price-current">$44.99</span>
+              <span class="price-original">$119.99</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-image">
+          <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=400&h=250&fit=crop" alt="Behavioral Interviews">
+          <span class="course-badge new">New</span>
+        </div>
+        <div class="course-body">
+          <h3 class="course-title">Behavioral Interviews Guide</h3>
+          <p class="course-instructor">By HR Professionals</p>
+          <div class="course-rating">
+            <span class="rating-stars">★★★★★</span>
+            <span class="rating-number">4.8</span>
+            <span class="rating-count">(4,567)</span>
+          </div>
+          <div class="course-footer">
+            <span class="course-price">
+              <span class="price-current">$39.99</span>
+              <span class="price-original">$99.99</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-image">
+          <img src="https://images.unsplash.com/photo-1432821596592-e2c18b78144f?w=400&h=250&fit=crop" alt="Engineering Blogs">
+        </div>
+        <div class="course-body">
+          <h3 class="course-title">Engineering Blogs Curation</h3>
+          <p class="course-instructor">By AlgoMaster Team</p>
+          <div class="course-rating">
+            <span class="rating-stars">★★★★★</span>
+            <span class="rating-number">4.9</span>
+            <span class="rating-count">(3,456)</span>
+          </div>
+          <div class="course-footer">
+            <span class="course-price">
+              <span class="price-current">Free</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-image">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=250&fit=crop" alt="Coding Patterns">
+        </div>
+        <div class="course-body">
+          <h3 class="course-title">15 Coding Patterns</h3>
+          <p class="course-instructor">By Ashish Pratap Singh</p>
+          <div class="course-rating">
+            <span class="rating-stars">★★★★★</span>
+            <span class="rating-number">5.0</span>
+            <span class="rating-count">(9,876)</span>
+          </div>
+          <div class="course-footer">
+            <span class="course-price">
+              <span class="price-current">$34.99</span>
+              <span class="price-original">$89.99</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-image">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop" alt="Mock Interviews">
+        </div>
+        <div class="course-body">
+          <h3 class="course-title">Mock Interview Practice</h3>
+          <p class="course-instructor">By Interview Coaches</p>
+          <div class="course-rating">
+            <span class="rating-stars">★★★★★</span>
+            <span class="rating-number">4.8</span>
+            <span class="rating-count">(5,432)</span>
+          </div>
+          <div class="course-footer">
+            <span class="course-price">
+              <span class="price-current">$79.99</span>
+              <span class="price-original">$199.99</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Categories Section -->
+<section class="section categories-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Top Categories</h2>
+      <p>Browse courses by category and start your learning journey</p>
+    </div>
+    
+    <div class="categories-grid">
+      <a href="#" class="category-card">
+        <div class="category-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3>Data Structures</h3>
+        <p>125 courses</p>
+      </a>
+      
+      <a href="#" class="category-card">
+        <div class="category-icon">
+          <i class="fas fa-sitemap"></i>
+        </div>
+        <h3>System Design</h3>
+        <p>89 courses</p>
+      </a>
+      
+      <a href="#" class="category-card">
+        <div class="category-icon">
+          <i class="fas fa-project-diagram"></i>
+        </div>
+        <h3>Algorithm Patterns</h3>
+        <p>156 courses</p>
+      </a>
+      
+      <a href="#" class="category-card">
+        <div class="category-icon">
+          <i class="fas fa-comments"></i>
+        </div>
+        <h3>Behavioral Interviews</h3>
+        <p>45 courses</p>
+      </a>
+      
+      <a href="#" class="category-card">
+        <div class="category-icon">
+          <i class="fas fa-puzzle-piece"></i>
+        </div>
+        <h3>Design Patterns</h3>
+        <p>67 courses</p>
+      </a>
+      
+      <a href="#" class="category-card">
+        <div class="category-icon">
+          <i class="fas fa-database"></i>
+        </div>
+        <h3>Database Design</h3>
+        <p>52 courses</p>
+      </a>
+
+      <a href="#" class="category-card">
+        <div class="category-icon">
+          <i class="fas fa-cogs"></i>
+        </div>
+        <h3>Low-Level Design</h3>
+        <p>73 courses</p>
+      </a>
+
+      <a href="#" class="category-card">
+        <div class="category-icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3>Dynamic Programming</h3>
+        <p>94 courses</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section with Carousel -->
+<section class="section testimonials-section hero-bg">
+  <div class="container">
+    <div class="section-header">
+      <h2>What Our Users Say</h2>
+      <p>Hear from developers who transformed their careers with AlgoMaster</p>
+    </div>
+    
+    <div class="testimonials-carousel-wrapper">
+      <button class="testimonial-nav-btn prev" onclick="moveTestimonialCarousel(-1)">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      
+      <div class="testimonials-carousel-container">
+        <div class="testimonials-carousel-track" id="testimonialsCarouselTrack">
+          <div class="testimonial-box">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">"Ashish was the best DSA and System Design interviewer I've worked with. I thank him and his platform for helping me break into Meta."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">DB</div>
+              <div class="author-info">
+                <h4>Daniel Ball</h4>
+                <p>SWE @ Meta</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-box">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">"Algomaster's curated list of questions helped me brush up on my DSA concepts very quickly. The structured approach and well-selected problems made my preparation much more efficient and played a key role in helping me secure an offer from Amazon."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">DSG</div>
+              <div class="author-info">
+                <h4>Dhanushkumar S G</h4>
+                <p>SDE @ Amazon</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-box">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">"I had studied DSA, but when it came time to switch, I realized the importance of HLD/LLD. While there's plenty of content available on DSA, quality resources for System Design are relatively scarce. That's when I discovered AlgoMaster. His clear and structured explanations helped me immensely—and with his guidance, I was able to crack Google and Amazon."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AM</div>
+              <div class="author-info">
+                <h4>Arka Mazumder</h4>
+                <p>SWE-III @ Google</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-box">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">"AlgoMaster has everything in one place — problem lists, patterns, solutions, newsletters, system design courses, everything you need to crack any company. Keep it simple. Use as few tools as possible to streamline your practice. Especially if you're in an early-career to mid-level role — AlgoMaster is more than enough."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MV</div>
+              <div class="author-info">
+                <h4>Madhan Vadlamudi</h4>
+                <p>Software Engineer III</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="testimonial-box">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">"AlgoMaster turns DSA & system design prep into clear, practical lessons. The pattern-based approach and explanations are top-tier and interview-focused. I recommend it to my mentees and will keep pointing people here."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">PTB</div>
+              <div class="author-info">
+                <h4>Pranoy Tez Boddu</h4>
+                <p>SWE II @ Microsoft</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-box">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">"I've been curating software engineering content for more than 2 years now and the AlgoMaster blog is the one I keep including in my digest. Clear, important, visualized system design topics to help you pass your next interview or grow deeper in your role."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AZ</div>
+              <div class="author-info">
+                <h4>Alexandre Zajac</h4>
+                <p>SDE II @ Amazon</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <button class="testimonial-nav-btn next" onclick="moveTestimonialCarousel(1)">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Meet the Creator Section -->
+<section class="creator-section-compact">
+  <div class="creator-container-compact">
+    <div class="creator-image-wrapper-compact">
+      <div class="creator-image-compact">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" alt="Ashish Pratap Singh">
+      </div>
+    </div>
+    <div class="creator-content-compact">
+      <h2>Meet the Creator</h2>
+      <h3>Ashish Pratap Singh</h3>
+      <p>Hi! I'm a software engineer passionate about helping others excel in coding interviews and level up their Software Engineering career.</p>
+      <p>After solving 1000s of coding problems across multiple platforms and going through countless technical interviews myself, I created AlgoMaster.io to help make the learning process more systematic and enjoyable for everyone.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+  <div class="faq-container">
+    <div class="section-header">
+      <h2>Frequently Asked Questions</h2>
+      <p>Find answers to common questions about AlgoMaster</p>
+    </div>
+    
+    <div class="faq-grid">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>What is AlgoMaster.io?</span>
+          <i class="fas fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>AlgoMaster.io is a comprehensive learning platform designed to help software engineers prepare for technical interviews. We offer structured courses on Data Structures & Algorithms, System Design, Low-Level Design, and Behavioral Interviews. Our pattern-based approach helps you understand the underlying concepts rather than just memorizing solutions.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>What is AlgoMaster Newsletter?</span>
+          <i class="fas fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>The AlgoMaster Newsletter is a weekly publication where we share in-depth articles on coding patterns, system design concepts, interview tips, and industry best practices. Our 125K+ subscribers receive curated content that helps them stay updated with the latest trends in software engineering and interview preparation.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>How do I access the premium content?</span>
+          <i class="fas fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>To access premium content, simply create an account and choose a subscription plan that works best for you. We offer monthly and annual plans with full access to all courses, practice problems, system design case studies, and exclusive community features. You can cancel anytime with no long-term commitment.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>How do I cancel my premium subscription?</span>
+          <i class="fas fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>You can cancel your subscription anytime from your account settings. Simply navigate to Settings > Subscription > Cancel Subscription. Your access will continue until the end of your current billing period. No questions asked, and you can always resubscribe later if you change your mind.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Do you offer refunds?</span>
+          <i class="fas fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Yes! We offer a 30-day money-back guarantee. If you're not satisfied with AlgoMaster within the first 30 days of your subscription, contact our support team at support@algomaster.io, and we'll process a full refund. We want to ensure you're completely happy with your learning experience.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>How is AlgoMaster.io different from other coding platforms?</span>
+          <i class="fas fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>AlgoMaster.io focuses on pattern recognition and systematic learning rather than random problem-solving. We group problems by underlying patterns, provide comprehensive system design courses, and offer real interview questions from top tech companies. Our community-driven approach and personalized learning paths set us apart from traditional coding platforms.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>How often is new content added?</span>
+          <i class="fas fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>We add new content every week! This includes new practice problems, updated system design case studies, fresh interview questions, and articles in our newsletter. We also regularly update existing content based on industry trends and community feedback to ensure you're always learning the most relevant material.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Can I use AlgoMaster.io on mobile devices?</span>
+          <i class="fas fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely! AlgoMaster.io is fully responsive and works seamlessly on all devices including smartphones, tablets, and desktops. You can learn on-the-go, practice problems during your commute, or review system design concepts anywhere. Our mobile experience is optimized for easy navigation and comfortable reading.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Ready to Start Your Journey?</h2>
+      <p>Join 650,000+ students mastering technical interviews</p>
+      <button class="btn btn-large">Enroll Now</button>
+    </div>
+  </div>
+</section>
+
+<%- include('footer') %>
